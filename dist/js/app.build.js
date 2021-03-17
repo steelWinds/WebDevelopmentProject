@@ -1,0 +1,2 @@
+"use strict";var _menu=_interopRequireDefault(require("./modules/menu.js"));function _interopRequireDefault(e){return e&&e.__esModule?e:{default:e}}var a=10;(0,_menu.default)();
+"use strict";function _default(){alert(1)}Object.defineProperty(exports,"__esModule",{value:!0}),exports.default=_default;
