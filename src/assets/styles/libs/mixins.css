@@ -1,0 +1,17 @@
+@define-mixin wh $w, $h {
+    width: $w;
+    height: $h;
+}
+
+@define-mixin pos-0 {
+    position: absolute;
+    top: 0;
+    left: 0;
+}
+
+@define-mixin flex-box $dir, $justify, $align {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: $justify;
+    align-items: $align;
+}

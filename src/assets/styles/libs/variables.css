@@ -1,0 +1,32 @@
+/* Sizes */
+
+$m-size: 1200px;
+$l-size: 1400px;
+$mobile-point: 1024px;
+
+
+/* Font Sizes */
+
+$normal: 1rem;
+$pre-medium: 1.1rem;
+$medium: 1.3rem;
+$large: 1.6;
+$mega-large: 3.6rem;
+
+
+/* Colors */
+
+$pre-black: #212121;
+$white: #ffffff;
+
+
+/* Z-index */
+
+$z-over: 1000;
+
+
+/* Atoms */
+
+$m-normal: 15px;
+$p-normal: 15px;
+$p-45: 45px;

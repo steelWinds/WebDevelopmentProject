@@ -1,0 +1,66 @@
+.header {
+    @mixin pos-0;
+    @mixin wh 100%, auto;
+
+    background-color: $white;
+
+    z-index: $z-over;
+
+    &__logoGroup {
+        @mixin flex-box row space-between center;
+
+        text-transform: capitalize;
+
+        @media (max-width: $mobile-point) {
+            padding: 0 $p-normal;
+            width: 100%;
+        }
+    }
+
+    &__logo {
+        font-weight: bold;
+        font-size: $medium;
+    }
+
+    &__nav {
+        @mixin flex-box row center center;
+
+        text-transform: capitalize;
+        font-weight: 600;
+
+        @media (max-width: $mobile-point) {
+            flex-direction: column;
+            margin: {
+                top: $m-normal;
+            }
+        }
+    }
+
+    &__navItem {
+        margin: 0 $m-normal;
+
+        font-size: $pre-medium;
+        letter-spacing: .05rem;
+        text-align: center;
+
+        &:hover {
+            text-decoration: underline;
+        }
+
+        &:last-child {
+            margin: {
+                bottom: 0;
+            }
+        }
+
+        @media (max-width: $mobile-point) {
+            margin: {
+                bottom: $m-normal;
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+
+    
+}

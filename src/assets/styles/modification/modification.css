@@ -1,0 +1,14 @@
+/* Flex & Grid */
+
+.flexCenterSpace {
+    @mixin flex-box row, space-between, center;
+}
+
+.flexCenter {
+    @mixin flex-box row, center, center;
+}
+/* Backgrounds */
+
+.headerBackground {
+    background: center/cover no-repeat url('../image/header_background.png');
+}

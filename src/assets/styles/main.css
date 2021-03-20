@@ -1,0 +1,26 @@
+/* Libs */
+
+@import './libs/mixins';
+@import './libs/variables';
+@import 'normalize.css';
+@import './libs/myNormalize';
+
+
+/* Fonts */
+
+@import '../fonts/OpenSans/openSansFont';
+
+
+/* Components */
+
+@import './components/sectionIndexTitle';
+@import './components/header';
+@import './components/container';
+@import './components/footer';
+@import './components/main';
+@import './components/wrapper';
+
+
+/* Modifications */
+
+@import './modification/modification'

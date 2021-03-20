@@ -1,22 +1,30 @@
 import gulp from 'gulp';
-import gulpSass from 'gulp-sass';
+import postcss from 'gulp-postcss';
 import autoprefixer from 'autoprefixer';
+import postcssVars from 'postcss-simple-vars';
+import postcssNested from 'postcss-nested';
+import postcssMixin from 'postcss-mixins';
+import postcssImport from 'postcss-import';
+import postcssNestedProps from 'postcss-nested-props';
 import concat from 'gulp-concat';
-import concatcss from 'gulp-concat-css';
 import cssnano from 'cssnano';
 import uglify from 'gulp-uglify';
-import postcss from 'gulp-postcss';
 import babel from 'gulp-babel';
 import imageMin from 'gulp-image';
 import del from 'del';
 
 const postcssPlugins = [
+    postcssImport(),
+    postcssVars(),
+    postcssNested(),
+    postcssNestedProps(),
+    postcssMixin(),
     autoprefixer(),
     cssnano(),
 ]
 
 const PATHS = {
-    styles: './src/assets/styles/**/*.sass',
+    styles: './src/assets/styles/main.css',
     js: './src/assets/js/**/*',
     image: './src/assets/image/**/*',
     fonts: './src/assets/fonts/**/*',
@@ -25,8 +33,6 @@ const PATHS = {
 
 function cssTask() {
     return gulp.src(PATHS.styles)
-           .pipe(gulpSass())
-           .pipe(concatcss('styles.css'))
            .pipe(postcss(postcssPlugins))
            .pipe(gulp.dest('./dist/styles'))
 }
@@ -41,7 +47,7 @@ function jsTask() {
 
 function htmlTask() {
     return gulp.src(PATHS.templates)
-           .pipe(gulp.dest('./dist/templates'))
+           .pipe(gulp.dest('./dist/templates/'))
 }
 
 function imageTask() {

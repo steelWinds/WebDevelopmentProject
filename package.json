@@ -16,10 +16,21 @@
     "gulp-concat-css": "^3.1.0",
     "gulp-image": "^6.2.1",
     "gulp-postcss": "^9.0.0",
-    "gulp-sass": "^4.1.0",
     "gulp-uglify": "^3.0.2",
     "gulp-watch": "^5.0.1",
-    "postcss": "^8.2.8"
+    "postcss": "^8.2.8",
+    "postcss-import": "^14.0.0",
+    "postcss-mixins": "^7.0.3",
+    "postcss-nested": "^5.0.5",
+    "postcss-nested-props": "^2.0.0",
+    "postcss-simple-vars": "^6.0.3",
+    "postcss-sorting": "^6.0.0",
+    "precss": "^4.0.0",
+    "sugarss": "^3.0.3"
   },
-  "scripts": {}
+  "scripts": {},
+  "dependencies": {
+    "anime": "^0.1.2",
+    "normalize.css": "^8.0.1"
+  }
 }

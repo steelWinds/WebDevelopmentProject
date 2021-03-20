@@ -1,0 +1,6 @@
+.container {
+    @mixin wh 100%, 100%;
+    @mixin flex-box column, center, center;
+
+    min-height: 100vh;
+}

@@ -1,0 +1,22 @@
+.wrapper {
+    @mixin wh 100%, auto;
+
+    max-width: $m-size;
+    margin: auto;
+
+    &_header {
+        @mixin flex-box row, space-between, center;
+
+        padding: $p-45 $p-normal;
+
+        font-family: 'Open Sans';
+
+        @media (max-width: $mobile-point) {
+            flex-direction: column;
+            padding: {
+                left: 0;
+                right: 0;
+            }
+        }
+    }
+}
