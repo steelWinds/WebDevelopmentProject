@@ -1,0 +1,26 @@
+.grid {
+    @mixin wh 100%, auto;
+
+    display: grid;
+    grid-template: repeat(1, 1fr) / repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+
+    &_style1 {
+        grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
+        justify-content: space-between;
+        align-content: center;
+
+        & > * {
+            margin: 0 $m-normal;
+        }
+
+        @media (max-width: $mobile-point) {
+            grid-template-columns: repeat(1, minmax(250px, 300px));
+            justify-content: center;
+            
+            & > * {
+                margin: $m-normal 0;
+            }
+        }
+    }
+}

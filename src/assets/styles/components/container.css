@@ -3,4 +3,8 @@
     @mixin flex-box column, center, center;
 
     min-height: 100vh;
+
+    &_pNormal {
+        padding: 125px 0;
+    }
 }

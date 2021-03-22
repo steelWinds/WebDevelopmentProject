@@ -7,6 +7,7 @@ $mobile-point: 1024px;
 
 /* Font Sizes */
 
+$small: .9rem;
 $normal: 1rem;
 $pre-medium: 1.1rem;
 $medium: 1.3rem;
@@ -19,6 +20,7 @@ $mega-large: 3.6rem;
 $pre-black: #212121;
 $white: #ffffff;
 $dark-green: #00897b;
+$light-green: #e4fdf9;
 
 
 /* Z-index */

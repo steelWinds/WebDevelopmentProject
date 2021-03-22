@@ -17,9 +17,13 @@
     }
 
     &__btns {
+        @mixin flex-box row, center, center;
+
         margin-top: 100px;
         
         @media (max-width: $mobile-point) {
+            flex-direction: column;
+
             & * {
                 margin: {
                     right: 0 !important;
@@ -38,7 +42,7 @@
         @mixin wh 50px, 50px;
 
         position: relative;
-        top: 100px;
+        top: 250px;
 
         border: none;
 

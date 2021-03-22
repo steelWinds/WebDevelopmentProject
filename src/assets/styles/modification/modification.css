@@ -4,8 +4,8 @@
     @mixin flex-box row, space-between, center;
 }
 
-.flexCenter {
-    @mixin flex-box row, center, center;
+.flexCenterColumn {
+    @mixin flex-box column, center, center;
 
     @media (max-width: $mobile-point) {
         flex-direction: column;
@@ -17,6 +17,18 @@
 
 .headerBackground {
     background: center/cover no-repeat url('../image/header_background.png');
+}
+
+.lightGreenBackground {
+    background-color: $light-green;
+}
+
+
+/* Width & Height */
+
+.no100vh {
+    height: auto !important;
+    min-height: auto !important;   
 }
 
 

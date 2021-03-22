@@ -1,0 +1,19 @@
+.sectionTitle {
+    @mixin wh 100%, auto;
+
+    margin-bottom: 115px;
+    max-width: 600px;
+
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+
+    &__title {
+        margin-bottom: 30px;
+        
+        text-transform: capitalize;
+    }
+
+    &__subtitle {
+        line-height: $medium;
+    }
+}
