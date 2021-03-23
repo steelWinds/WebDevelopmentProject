@@ -1,5 +1,5 @@
 .verticalCard {
-    @mixin flex-box column, center, center;
+    @mixin flex-box column, flex-start, center;
 
     text-align: center;
     font-family: 'Open Sans', sans-serif;

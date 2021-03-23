@@ -3,24 +3,51 @@
 
     display: grid;
     grid-template: repeat(1, 1fr) / repeat(auto-fit, minmax(250px, 1fr));
-    gap: 15px;
+    align-content: start;
 
     &_style1 {
         grid-template-columns: repeat(auto-fit, minmax(250px, 300px));
         justify-content: space-between;
         align-content: center;
+        margin: {
+            left: 25px;
+            top: 25px;
+        };
 
         & > * {
-            margin: 0 $m-normal;
+            margin: {
+               right: 25px;
+               bottom: 25px; 
+            };
         }
 
         @media (max-width: $mobile-point) {
             grid-template-columns: repeat(1, minmax(250px, 300px));
             justify-content: center;
-            
-            & > * {
-                margin: $m-normal 0;
+
+            & > *:not(:last-child) {
+                margin-bottom: 30px;
             }
+        }
+    }
+
+    &_style2 {
+        grid-template-columns: repeat(3, minmax(250px, 1fr));
+        margin: {
+            top: 30px; 
+            left: 30px;
+        };
+
+        & > * {
+            margin: {
+                bottom: 30px;
+                right: 30px;
+            };
+        }
+
+        @media (max-width: $mobile-point) {
+            grid-template-columns: minmax(250px, 370px);
+            justify-content: center;
         }
     }
 }

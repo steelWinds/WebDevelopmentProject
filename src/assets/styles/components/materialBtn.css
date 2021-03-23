@@ -6,12 +6,10 @@
     font: bold 1rem 'Roboto';
     text-transform: uppercase;
     letter-spacing: .05rem;
-    white-space: nowrap;
-    word-break: none;
 
     transition: all $t-normal linear;
 
-    &_styleOne {
+    &_style1 {
         border: 3px solid $white;
 
         &:hover {
@@ -20,7 +18,13 @@
         }
     }
 
-    &_styleSecond {
+    &_styleBlack1 {
+        border: 3px solid $pre-black;
+        
+        color: $pre-black; 
+    }
+
+    &_style2 {
         border: 3px solid $dark-green;
         background-color: $dark-green;
 

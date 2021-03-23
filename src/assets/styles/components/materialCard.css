@@ -1,0 +1,72 @@
+.materialCard {
+    @mixin wh 100%, auto;
+    @mixin flex-box column, flex-start, center;
+
+    padding: 50px;
+
+    hyphens: auto;
+    color: $pre-black;
+    text-align: center;
+    font-family: 'Open Sans', sans-serif;
+    background-color: $white;
+
+    transition: all $t-normal linear;
+
+    &:hover {
+        background-color: $dark-green;
+        color: $white;
+    }
+
+    &:hover &__btn {
+        border-color: $white !important;
+    }
+
+    &__img {
+        @mixin flex-box row, center, center;
+        @mixin wh 95px, 95px;
+
+        margin-bottom: 30px;
+        border-radius: 100%;
+
+        background-color: white;
+
+        & > img {
+            @mixin wh 60px, 60px;
+
+            display: block;
+
+            object-fit: contain;
+        }
+    }
+
+    &__title {
+        margin-bottom: 15px;
+        
+        text-transform: capitalize;
+        font-weight: 600;
+    }
+
+    &__subtitle {
+        font-size: $small;
+        line-height: $medium;
+    }
+
+    &__btn {
+        display: inline-block;
+        padding: 15px 20px;
+        margin-top: 40px;
+        border: 2px solid $pre-black;
+
+        text-transform: uppercase;
+        font-weight: 600;
+        letter-spacing: .05rem;
+        color: currentColor;
+
+        transition: all $t-normal linear;
+
+        &:hover {
+            background-color: $white;
+            color: $pre-black;
+        }
+    }
+}
