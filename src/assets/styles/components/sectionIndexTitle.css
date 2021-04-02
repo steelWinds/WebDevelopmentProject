@@ -6,12 +6,12 @@
     font-family: 'Open Sans';
 
     &__title {
-        font-size: $mega-large;
+        font-size: $xx-large;
         font-weight: 600;
         letter-spacing: .3rem;
 
         @media (max-width: $mobile-point) {
-            font-size: $big-large;
+            font-size: $x-large;
         } 
     }
 

@@ -13,14 +13,14 @@
     transition: all $t-normal linear;
 
     &:before {
-        @mixin wh 100%, 0;
+        @mixin wh 0, 100%;
 
         content: "";
 
         position: absolute;
-        left: 0;
-        top: auto; 
-        bottom: 0;
+        left: auto;
+        right: 0;
+        top: 0; 
 
         background-color: $dark-green;
 
@@ -32,9 +32,9 @@
         color: $white;
 
         &:before {
-            top: 0;
+            left: 0;
 
-            height: 100%;
+            width: 100%;
         }
     }
 }

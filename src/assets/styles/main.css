@@ -15,6 +15,12 @@
 
 /* Components */
 
+@import './components/materialForm';
+@import './components/iconCircle';
+@import './components/iconText';
+@import './components/blogItem';
+@import './components/employeeCard';
+@import './components/priceCard';
 @import './components/arrowSlideDown';
 @import './components/borderBtn';
 @import './components/viewList';

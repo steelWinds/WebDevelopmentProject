@@ -11,8 +11,8 @@ $normal: 1rem;
 $pre-medium: 1.1rem;
 $medium: 1.3rem;
 $large: 1.6rem;
-$big-large: 2.6rem;
-$mega-large: 3.6rem;
+$x-large: 2.6rem;
+$xx-large: 3.6rem;
 
 $lSpace-medium: .1rem;
 
@@ -23,6 +23,11 @@ $pre-black: #212121;
 $white: #ffffff;
 $dark-green: #00897b;
 $light-green: #e4fdf9;
+$gray: #f0f1f1;
+$pre-gray: #bfbfbf;
+$white-gray: #f0f1f1;
+$post-gray: #3f3f3f;
+$blue: #3949ab;
 
 
 /* Z-index */

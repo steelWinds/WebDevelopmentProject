@@ -2,12 +2,12 @@
     display: inline-block;
     padding: 20px 45px;
 
-    background-color: transparent;
     font: bold 1rem 'Roboto';
     text-transform: uppercase;
     letter-spacing: .05rem;
 
     transition: all $t-normal linear;
+    outline: none;
 
     &_style1 {
         border: 3px solid $white;
@@ -22,6 +22,13 @@
         border: 3px solid $pre-black;
         
         color: $pre-black; 
+
+        &:hover {
+            border-color: $dark-green;
+
+            background-color: $dark-green;
+            color: $white;
+        }
     }
 
     &_style2 {

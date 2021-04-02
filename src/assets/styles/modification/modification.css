@@ -23,6 +23,13 @@
     background-color: $light-green;
 }
 
+.grayBackground {
+    background-color: $gray;
+}
+
+.humansBackground {
+    background: center/cover no-repeat url('../image/footerBG.png');
+}
 
 /* Width & Height */
 
@@ -31,9 +38,37 @@
     min-height: auto !important;   
 }
 
+.w100 {
+    width: 100%;
+}
+
 
 /* Margins */
 
 .mr-25 {
     margin-right: 25px;
+}
+
+.mt-110 {
+    margin-top: 110px;
+}
+
+.mt-60 {
+    margin-top: 60px;
+}
+
+/* Sizes */
+
+.f-xx-large {
+    font-size: $xx-large;
+}
+
+/* Text Format */
+
+.vertical-top {
+    vertical-align: top;
+}
+
+.colorWhite {
+    color: $white;
 }

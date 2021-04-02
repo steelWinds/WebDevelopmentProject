@@ -1,0 +1,75 @@
+.employeeCard {
+    @mixin flex-box column, center, center;
+    @mixin wh 100%, auto;
+
+    font-family: 'Open Sans';
+    text-align: center;
+
+    &__img {
+        @mixin wh 100%, 320px;
+
+        position: relative;
+
+        & > img {
+            @mixin pos-0 absolute;
+            @mixin wh 100%, 100%;
+
+            display: block;
+            border-radius: 10px;
+
+            object-fit: cover;
+        }
+
+        @media (max-width: $mobile-point) {
+            height: auto;
+            padding-top: 100%;
+        }
+    }
+
+    &__desc {
+        margin: 35px 0;
+
+        text-transform: capitalize;
+        color: $pre-black; 
+    }
+
+    &__title {
+        margin-bottom: 10px;
+
+        font-weight: 600;
+        letter-spacing: .1rem;
+    }
+
+    &__contacts {
+        @mixin flex-box center, center, center;
+    }
+
+    &__contactItem {
+        @mixin wh 50px, 50px;
+        display: inline-block;
+
+        margin: 0 10px;
+        padding: 10px;
+        border-radius: 15px;
+
+        background: $white-gray;
+
+        transition: all $t-normal linear;
+
+        & > img {
+            @mixin wh 100%, 100%;
+
+            display: block;
+
+            object-fit: contain;
+        }
+
+        &:hover {
+            background-color: $dark-green;
+        }
+
+        &:hover > img {
+            filter: brightness(0) invert(100%);
+        }
+    }
+}

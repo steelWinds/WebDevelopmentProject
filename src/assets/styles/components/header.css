@@ -34,20 +34,41 @@
     }
 
     &__navItem {
+        position: relative;
+
         margin: 0 $m-normal;
+        box-sizing: content-box;
+        padding-bottom: 5px;
 
         font-size: $pre-medium;
         letter-spacing: .05rem;
         text-align: center;
 
-        &:hover {
-            text-decoration: underline;
+        &:last-child {
+            margin-bottom: 0;
         }
 
-        &:last-child {
-            margin: {
-                bottom: 0;
-            }
+        &:before {
+            @mixin wh 0, 2px; 
+
+            content: "";
+
+            position: absolute;
+            left: auto;
+            right: 0;
+            bottom: 0;
+
+            border-radius: 10px;
+
+            background-color: $pre-black;
+
+            transition: all $t-normal linear;
+        }
+
+        &:hover:before {
+            left: 0;
+
+            width: 100%;
         }
 
         @media (max-width: $mobile-point) {
