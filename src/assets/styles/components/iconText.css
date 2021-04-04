@@ -1,7 +1,5 @@
 .iconText {
     @mixin flex-box row, flex-start, center;
-
-    margin-right: 25px;
     
     font-weight: 600;
 
