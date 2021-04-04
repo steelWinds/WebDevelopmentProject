@@ -22,20 +22,22 @@
                                 <img src="../image/logo.svg" alt="Logo Image" class="logo__img">
                             </article>
                         </a>
+
+                        <button class="header__menuBtn"></button>
                     </section>
 
                     <nav class="header__nav">
-                        <a href="#" class="header__navItem">home</a>
-                        <a href="#" class="header__navItem">about</a>
-                        <a href="#" class="header__navItem">servicing</a>
-                        <a href="#" class="header__navItem">portfolio</a>
-                        <a href="#" class="header__navItem">blog</a>
-                        <a href="#" class="header__navItem">contact us</a>
+                        <button data-section="#section1" class="header__navItem">home</button>
+                        <button data-section="#section2" class="header__navItem">about us</button>
+                        <button data-section="#section3" class="header__navItem">servicing</button>
+                        <button data-section="#section4" class="header__navItem">portfolio</button>
+                        <button data-section="#section5" class="header__navItem">blog</button>
+                        <button data-section="#section6" class="header__navItem">contact us</button>
                     </nav>
                 </div>
             </header>
 
-            <section class="container headerBackground">
+            <section class="container headerBackground" id="section1">
                 <div class="wrapper flexCenterColumn">
                     <article class="sectionIndexTitle">
                         <h1 class="sectionIndexTitle__title">Web Development Project</h1>
@@ -46,14 +48,14 @@
                         </article>
                     </article>
 
-                    <button class="arrowSlideDown"></button>
+                    <button data-section="#section2" class="arrowSlideDown"></button>
                 </div>
             </section>
 
-            <section class="container container_pNormal no100vh">
+            <section class="container container_pNormal no100vh" id="section2">
                 <div class="wrapper flexCenterColumn">
                     <article class="sectionTitle">
-                        <h2 class="sectionTitle__title">our services</h2>
+                        <h2 class="sectionTitle__title">About us</h2>
                         <p class="sectionTitle__subtitle">
                             Lorem ipsum dolor sit amet consectetur adipisicing elit. 
                             Sunt provident dicta deleniti aperiam modi accusamus aut dolores ad maxime fugiat.
@@ -103,7 +105,7 @@
                 </div>
             </section>
 
-            <section class="container container_pNormal lightGreenBackground no100vh">
+            <section class="container container_pNormal lightGreenBackground no100vh" id="section3">
                 <div class="wrapper flexCenterColumn">
                     <article class="sectionTitle">
                         <h2 class="sectionTitle__title">our services</h2>
@@ -219,7 +221,7 @@
                 </div>
             </section>
 
-            <section class="container container_pNormal no100vh">
+            <section class="container container_pNormal no100vh" id="section4">
                 <div class="wrapper flexCenterColumn">
                     <article class="sectionTitle">
                         <h2 class="sectionTitle__title">latest works</h2>
@@ -534,7 +536,7 @@
                 </div>
             </section>
 
-            <section class="container container_pNormal no100vh lightGreenBackground">
+            <section class="container container_pNormal no100vh lightGreenBackground" id="section5">
                 <div class="wrapper flexCenterColumn">
                     <article class="sectionTitle">
                         <h2 class="sectionTitle__title">blog</h2>
@@ -640,7 +642,7 @@
                 </div>
             </section>
 
-            <section class="container container_pNormal no100vh humansBackground">
+            <section class="container container_pNormal no100vh humansBackground" id="section6">
                 <div class="wrapper flexCenterColumn">
                     <article class="sectionTitle colorWhite">
                         <h2 class="sectionTitle__title">pricing plan</h2>
@@ -658,7 +660,9 @@
                                 </section>
 
                                 <section class="iconCircle__text">
-                                    <a href="">Nobinagar savar,Dhaka Bangladesh</a>
+                                    <a target="_blank" href="https://www.google.ru/maps/place/Nobinagar+Bus+Stop/@23.9124873,90.2573673,17z/
+                                            data=!3m1!4b1!4m5!3m4!1s0x3755e8f9286fb345:0x6920834025eb40d0!8m2!
+                                            3d23.9124824!4d90.259556">Nobinagar savar,Dhaka Bangladesh</a>
                                 </section>
                             </article>
                         </div>
@@ -671,7 +675,7 @@
 
                                 <section class="iconCircle__text">
                                     <a href="tel:+79991009090">+79991009090</a>
-                                    <a href="">+79991009090</a>
+                                    <a href="tel:+79991009090">+79991009090</a>
                                 </section>
                             </article>
                         </div>
@@ -683,8 +687,8 @@
                                 </section>
 
                                 <section class="iconCircle__text">
-                                    <a href="">example@mail.ru</a>
-                                    <a href="">example@mail.ru</a>
+                                    <a href="mailto:example@mail.ru">example@mail.ru</a>
+                                    <a href="mailto:example@mail.ru">example@mail.ru</a>
                                 </section>
                             </article>
                         </div>
