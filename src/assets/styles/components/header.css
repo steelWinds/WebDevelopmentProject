@@ -6,8 +6,56 @@
 
     z-index: $z-over;
 
+    &__menuBtn {
+        @mixin wh 55px, 55px;
+
+        position: relative;
+
+        display: none;
+
+        background-color: black;
+
+        @media (max-width: $mobile-point) {
+            display: block;
+        }
+
+        &:focus:after {
+            top: 25px;
+            left: 50%;
+            transform: translateX(-50%) rotate(45deg);
+        }
+
+        &:focus:before {
+            bottom: 25px;
+            left: 50%;
+            transform: translateX(-50%) rotate(-45deg);
+        }
+
+        &:after, &:before {
+            @mixin wh 80%, 5px;
+
+            content: "";
+
+            position: absolute;
+            left: 50%;
+            transform: translateX(-50%);
+
+            background-color: $white;
+
+            transition: all $t-normal ease;
+        }
+
+        &:after {
+            top: 15px;
+        }
+
+        &:before {
+            bottom: 15px;   
+        }
+    }
+
     &__logoGroup {
-        @mixin flex-box row space-between center;
+        @mixin flex-box row, space-between, center;
 
         text-transform: capitalize;
 
@@ -18,18 +66,26 @@
     }
 
     &__nav {
-        @mixin flex-box row center center;
+        @mixin flex-box row, center, center;
 
-        text-transform: capitalize;
-        font-weight: 600;
         white-space: nowrap;
         word-break: none;
         
         overflow: hidden;
+        transition: all $t-normal ease;
 
         @media (max-width: $mobile-point) {
+            position: absolute;
+            top: 90px;
+
+            width: 100%;
             flex-direction: column;
-            height: 0;
+            padding: 15px 0;
+
+            background: $white;
+
+            transform: translateY(-200%);
+            z-index: -1;
         }
     }
 
@@ -40,9 +96,12 @@
         box-sizing: content-box;
         padding-bottom: 5px;
 
+        background-color: transparent;
         font-size: $pre-medium;
         letter-spacing: .05rem;
         text-align: center;
+        text-transform: capitalize;
+        font-weight: 600;
 
         &:last-child {
             margin-bottom: 0;
