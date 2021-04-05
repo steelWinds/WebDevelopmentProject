@@ -27,6 +27,7 @@ btnMenu.addEventListener('blur', (e) => {
 
 
 let btnArrow = document.querySelector('.arrowSlideDown');
+let header = document.querySelector('.header');
 
 function scrollDocument(e, duration) {
     if (e.target.tagName !== "BUTTON") return; 
@@ -35,9 +36,10 @@ function scrollDocument(e, duration) {
     let section = document.querySelector(`${sectionId}`);
 
     let sectionCoords = section.getBoundingClientRect();
+    let headerHeight = header.offsetHeight;
 
     $(document.documentElement).animate({
-        scrollTop: (sectionCoords.y + pageYOffset) - 90
+        scrollTop: (sectionCoords.y + pageYOffset) - headerHeight
     }, duration)
 }
 
